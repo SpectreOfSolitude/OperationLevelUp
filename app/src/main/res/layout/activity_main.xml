@@ -78,7 +78,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="10"
+        android:text="@string/LevelValue"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
         app:layout_constraintEnd_toEndOf="@+id/progressBar2"
@@ -90,7 +90,9 @@
         android:layout_width="110dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
-        android:text="Username"
+        android:gravity="center"
+        android:text="@string/Username"
+        android:textAlignment="viewStart"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
@@ -99,29 +101,32 @@
 
     <TextView
         android:id="@+id/SpecialistPreview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="32dp"
-        android:text="Role"
+        android:gravity="center"
+        android:text="@string/SpecialistRole"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/Username"
-        app:layout_constraintVertical_bias="0.01999998" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <TextView
         android:id="@+id/Gold"
-        android:layout_width="12dp"
-        android:layout_height="19dp"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="32dp"
-        android:text="0"
+        android:text="@string/GoldValue"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Username"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.108" />
 
     <ImageButton
         android:id="@+id/imageButton2"

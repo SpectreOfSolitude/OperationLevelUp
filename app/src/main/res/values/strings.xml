@@ -4,4 +4,8 @@
     <string name="title_dashboard">Quests</string>
     <string name="title_notifications">Notifications</string>
     <string name="Tulisan_Welcome">Selamat datang!!!</string>
+    <string name="SpecialistRole">Role</string>
+    <string name="GoldValue">0</string>
+    <string name="Username">Username</string>
+    <string name="LevelValue">10</string>
 </resources>
