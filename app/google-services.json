@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "288422182465",
+    "project_id": "whizz-61839",
+    "storage_bucket": "whizz-61839.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288422182465:android:60fbd243fdcac7d6c150c0",
+        "android_client_info": {
+          "package_name": "com.speda.whizz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288422182465-cac444b283l2pcuat165uqhak1cgrgrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.speda.whizz",
+            "certificate_hash": "8fbb11d1c8a0c2bc06f9aeefe0a052887e6efa91"
+          }
+        },
+        {
+          "client_id": "288422182465-3mm5f4d5ab9kie038vj2dk4n9qlqrcr3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYgDmV6UPIJZAllMuu2Vzr90CRcWVjnC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288422182465-3mm5f4d5ab9kie038vj2dk4n9qlqrcr3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
