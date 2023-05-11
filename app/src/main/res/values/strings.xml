@@ -8,4 +8,5 @@
     <string name="GoldValue">0</string>
     <string name="Username">Username</string>
     <string name="LevelValue">10</string>
+    <string name="QuestNumber">1</string>
 </resources>
