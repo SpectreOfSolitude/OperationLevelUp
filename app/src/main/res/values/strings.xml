@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Whizz</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Desk</string>
+    <string name="title_dashboard">Quests</string>
     <string name="title_notifications">Notifications</string>
     <string name="Tulisan_Welcome">Selamat datang!!!</string>
 </resources>
