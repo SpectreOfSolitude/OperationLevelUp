@@ -9,4 +9,26 @@
     <string name="Username">Username</string>
     <string name="LevelValue">10</string>
     <string name="QuestNumber">1</string>
+    <string name="LoremIpsum">Lorem Ipsum Dolor SIt Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n
+        Lorem Ipsum Dolor Sit Amet \n</string>
 </resources>

@@ -37,20 +37,20 @@
         app:layout_constraintVertical_bias="0.923"
         app:navGraph="@navigation/mobile_navigation" />
 
+
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="showToast"
         android:text="Toast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="showToast"
-        />
-
+        app:layout_constraintVertical_bias="0.89" />
 
     <ImageButton
         android:id="@+id/AddQuest"
@@ -66,6 +66,31 @@
         app:srcCompat="@android:drawable/ic_menu_compass"
         android:onClick="AddQuest"
         />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="423dp"
+        android:layout_height="504dp"
+        android:scrollbarStyle="insideInset"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/navView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="370dp"
+            android:layout_height="349dp"
+            android:text="@string/LoremIpsum"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_activity_main"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ScrollView>
 
     <ProgressBar
         android:id="@+id/progressBar2"
