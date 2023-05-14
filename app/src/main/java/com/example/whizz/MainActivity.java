@@ -39,13 +39,12 @@ public class MainActivity extends AppCompatActivity {
     public void showToast(View view)
     {
         Toast quest = Toast.makeText(this, R.string.QuestNumber, Toast.LENGTH_SHORT);
-
         quest.show();
     }
 
     public void AddQuest(View view)
     {
-
+        
     }
 
 }
