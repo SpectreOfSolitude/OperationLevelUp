@@ -9,13 +9,13 @@ import android.util.Patterns;
 import com.example.whizz.ui.data.LoginRepository;
 import com.example.whizz.ui.data.Result;
 import com.example.whizz.ui.data.model.LoggedInUser;
-import com.example.whizz.ui.R;
+import com.example.whizz.R;
 
 public class LoginViewModel extends ViewModel {
 
-    private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
-    private MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
-    private LoginRepository loginRepository;
+    final private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
+    final private MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
+    final private LoginRepository loginRepository;
 
     LoginViewModel(LoginRepository loginRepository) {
         this.loginRepository = loginRepository;

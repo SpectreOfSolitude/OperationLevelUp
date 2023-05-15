@@ -22,7 +22,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.whizz.ui.R;
+import com.example.whizz.R;
 import com.example.whizz.ui.ui.login.LoginViewModel;
 import com.example.whizz.ui.ui.login.LoginViewModelFactory;
 import com.example.whizz.databinding.ActivityLoginBinding;
