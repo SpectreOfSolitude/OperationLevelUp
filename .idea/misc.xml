@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/drawable/Login_EntryBar.xml" value="0.2075" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/drawable/desk_ongoing_quest_button.xml" value="0.2075" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/drawable/desk_rounded_menu_graphics.xml" value="0.2075" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/drawable/rounded.xml" value="0.2065" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/layout-w936dp/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/layout/fragment_blank.xml" value="0.33" />
         <entry key="..\:/Users/akasy/AndroidStudioProjects/Whizz/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
