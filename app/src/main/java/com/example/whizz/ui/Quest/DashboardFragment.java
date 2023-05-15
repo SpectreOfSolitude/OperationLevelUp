@@ -1,4 +1,4 @@
-package com.example.whizz.ui.dashboard;
+package com.example.whizz.ui.Quest;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
