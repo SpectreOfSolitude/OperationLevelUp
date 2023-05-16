@@ -171,16 +171,13 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="431dp"
-        android:layout_height="218dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="467dp"
+        android:layout_height="268dp"
         android:background="@drawable/desk_rounded_menu_graphics"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.787" />
+        tools:layout_editor_absoluteY="357dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
