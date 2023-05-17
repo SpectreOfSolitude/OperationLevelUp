@@ -9,7 +9,7 @@
     <string name="GoldValue">0</string>
     <string name="OngoingQuests">On Going Quests</string>
     <string name="Username">Username</string>
-    <string name="LevelValue">10</string>
+    <string name="Avatar">Avatar</string>
     <string name="QuestNumber">1</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
