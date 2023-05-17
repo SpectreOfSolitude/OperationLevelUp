@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_whizz"
+    tools:context=".ui.signin.SigninActivity">
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:text="Create an Account"
+        android:textColor="@color/yellow_whizz"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="64dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/create_account"
+        android:layout_marginTop="155dp"
+        android:text="@string/full_name"
+        android:textAppearance="@style/full_name"
+        android:gravity="center_horizontal|top"
+        />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/full_name"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_entry_bar"
+        />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="64dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@id/editTextFullName"
+        android:layout_marginTop="10dp"
+        android:text="@string/Username"
+        android:textAppearance="@style/full_name"
+        android:gravity="center_horizontal|top"
+        />
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_below="@id/editTextFullName"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_entry_bar"
+        />
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="64dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="10dp"
+        android:text="@string/prompt_email"
+        android:textAppearance="@style/full_name"
+        android:gravity="center_horizontal|top"
+        />
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_entry_bar"
+        />
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="64dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="10dp"
+        android:text="@string/prompt_password"
+        android:textAppearance="@style/full_name"
+        android:gravity="center_horizontal|top"
+        />
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_entry_bar"
+        />
+    <TextView
+        android:id="@+id/confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="10dp"
+        android:text="@string/prompt_confirm"
+        android:textAppearance="@style/full_name"
+        android:gravity="center_horizontal|top"
+        />
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_entry_bar"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/yellow_whizz"
+        android:textColor="@color/yellow_whizz"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="-6dp"
+        android:layout_below="@id/editTextConfirmPassword"
+        />
+
+
+    <Button
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_Signin"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="130dp"
+        android:text="sign Up"
+        android:textColor="@color/purple_whizz"
+        android:backgroundTint="@color/yellow_whizz"
+
+        />
+    <TextView
+        android:id="@+id/i_agree_wit"
+        android:layout_width="208dp"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:text="@string/i_agree_wit"
+        android:textAppearance="@style/i_agree_wit"
+        android:gravity="center_horizontal|top"
+        />
+
+
+
+</RelativeLayout>
+
+
