@@ -23,6 +23,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.AuthResult;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.example.whizz.R;
 import com.example.whizz.databinding.ActivityLoginBinding;
 import com.example.whizz.ui.signin.SignUpActivity;
@@ -30,6 +35,10 @@ import com.example.whizz.ui.signin.SignUpActivity;
 public class LoginActivity extends AppCompatActivity {
 
     TextView textView;
+    EditText emailIn, passwordIn;
+    Button buttonLog;
+    Firebase mAuth;
+    ProgressBar progressbar;
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
 
@@ -40,6 +49,11 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_login);
 
+        mAuth=FirebaseAuth.getInstance();
+        emailIn = findViewById(R.id.login_email);
+        passwordIn = findViewById(R.id.login_password);
+        buttonLog = findViewById(R.id.login);
+        progressbar = findViewById(R.id.signup_progress);
         textView=(TextView)findViewById(R.id.signUp);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,13 +63,14 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "Sign Up in here", Toast.LENGTH_LONG).show();
             }
         });
+
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
-        final EditText usernameEditText = binding.username;
-        final EditText passwordEditText = binding.password;
-        final Button loginButton = binding.login;
-        final ProgressBar loadingProgressBar = binding.loading;
+        EditText usernameEditText = binding.username;
+        EditText passwordEditText = binding.password;
+        Button loginButton = binding.login;
+        ProgressBar loadingProgressBar = binding.loading;
 
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
@@ -133,7 +148,6 @@ public class LoginActivity extends AppCompatActivity {
                         passwordEditText.getText().toString());
             }
         });
-
 
     }
 

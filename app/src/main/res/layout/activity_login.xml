@@ -19,22 +19,22 @@
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/login_email"
         android:layout_width="310dp"
         android:layout_height="40dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="27dp"
-        android:paddingLeft="10dp"
         android:background="@drawable/login_entry_bar"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:paddingLeft="10dp"
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:textColor="@color/black"
         android:textColorHint="#858177"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.0" />
@@ -119,7 +119,7 @@
         app:srcCompat="@drawable/whizz" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/login_password"
         android:layout_width="310dp"
         android:layout_height="40dp"
         android:layout_marginTop="5dp"
