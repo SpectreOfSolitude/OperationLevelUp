@@ -3,14 +3,17 @@ package com.example.whizz.ui.signin;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.whizz.R;
+import com.example.whizz.ui.ui.login.LoginActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -18,15 +21,14 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUpActivity extends AppCompatActivity {
-
+    TextView textView;
     TextInputEditText EmailIn, PasswordIn, ConfirmPasswordIn;
     Button ButtonReg;
     FirebaseAuth mAuth;
     ProgressBar progressbar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         mAuth = FirebaseAuth.getInstance();
@@ -36,6 +38,14 @@ public class SignUpActivity extends AppCompatActivity {
         ButtonReg = findViewById(R.id.button_Signin);
         progressbar = findViewById(R.id.signup_progress);
 
+        textView=(TextView)findViewById(R.id.button_prev);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
         ButtonReg.setOnClickListener(new View.OnClickListener()
         {
             @Override
