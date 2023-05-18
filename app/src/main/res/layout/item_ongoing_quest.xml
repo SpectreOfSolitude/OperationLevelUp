@@ -12,7 +12,13 @@
         android:scaleType="fitStart"/>
 
     <TextView
-        android:id="@+id/title"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/ongoingquesttitle"
         android:layout_width="100dp"
         android:layout_height="20dp"
         android:layout_margin="10dp"

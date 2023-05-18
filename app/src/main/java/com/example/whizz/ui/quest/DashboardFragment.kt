@@ -1,38 +1,54 @@
-package com.example.whizz.ui.Quest;
+package com.example.whizz.ui.quest
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import android.os.Bundle
+import android.view.View
+import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.whizz.R
+import com.example.whizz.R.layout.fragment_dashboard
+import com.example.whizz.databinding.FragmentDashboardBinding
+import com.example.whizz.ui.data.Adapter.QuestAdapter
+import com.example.whizz.ui.data.model.Quest
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
+class DashboardFragment : Fragment() {
 
-import com.example.whizz.databinding.FragmentDashboardBinding;
+    lateinit var questAdapter:QuestAdapter
+    val lm = LinearLayoutManager(activity)
+    val addQuestList: MutableList<Quest> = ArrayList()
 
-public class DashboardFragment extends Fragment {
-
-    private FragmentDashboardBinding binding;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
-
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        final TextView textView = binding.dashboardPage;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_dashboard, container, false)
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+//    private var binding: FragmentDashboardBinding? = null
+//    override fun onCreateView(inflater: LayoutInflater,
+//                              container: ViewGroup?, savedInstanceState: Bundle?): View? {
+//        val dashboardViewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
+//        binding = FragmentDashboardBinding.inflate(inflater, container, false)
+//        val root: View = binding!!.root
+//        val textView = binding!!.dashboardPage
+//        dashboardViewModel.text.observe(viewLifecycleOwner) { text: String? -> textView.text = text }
+//        return root
+//    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initView()
+    }
+
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        binding = null
+//    }
+
+    fun initView()
+    {
+        rv_quest.layoutManager = lm
+        questAdapter = QuestAdapter(requireActivity())
+        rv_quest.adapter = questAdapter
     }
 }

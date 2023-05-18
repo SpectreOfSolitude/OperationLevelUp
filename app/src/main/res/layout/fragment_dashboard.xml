@@ -5,12 +5,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Quest.DashboardFragment">
-    
+    tools:context=".ui.quest.DashboardFragment">
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_quest"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_ongoing_quest"/>
+        tools:listitem="@layout/item_ongoing_quest" />
+
     <TextView
         android:id="@+id/dashboard_page"
         android:layout_width="wrap_content"
