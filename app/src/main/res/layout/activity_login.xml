@@ -159,9 +159,10 @@
         />
 
     <TextView
+        android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoLink="web"
+        android:textStyle="bold"
         android:text="@string/link_signup"
         android:textColor="@color/yellow_whizz"
         app:layout_constraintEnd_toEndOf="parent"
