@@ -24,6 +24,8 @@
     <string name="login_failed">"Login failed"</string>
     <string name="i_agree_wit">I agree with the Terms and Condition</string>
     <string name="full_name">Full Name</string>
+    <string name="link_signup">Sign Up</string>
+    <string name="have_no_account">You do not have account yet?</string>
 
 
 </resources>
