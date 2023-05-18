@@ -24,10 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.whizz.R;
-import com.example.whizz.ui.signin.SigninActivity;
-import com.example.whizz.ui.ui.login.LoginViewModel;
-import com.example.whizz.ui.ui.login.LoginViewModelFactory;
 import com.example.whizz.databinding.ActivityLoginBinding;
+import com.example.whizz.ui.signin.SignUpActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -46,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, SigninActivity.class);
+                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intent);
                 Toast.makeText(LoginActivity.this, "Sign Up in here", Toast.LENGTH_LONG).show();
             }

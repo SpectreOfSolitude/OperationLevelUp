@@ -5,14 +5,12 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
-import android.view.View;
 
 
 import com.example.whizz.ui.data.LoginRepository;
 import com.example.whizz.ui.data.Result;
 import com.example.whizz.ui.data.model.LoggedInUser;
 import com.example.whizz.R;
-import com.example.whizz.ui.signin.SigninActivity;
 
 public class LoginViewModel extends ViewModel {
 

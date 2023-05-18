@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_whizz"
-    tools:context=".ui.signin.SigninActivity">
+    tools:context=".ui.signin.SignUpActivity">
 
     <TextView
         android:id="@+id/create_account"
