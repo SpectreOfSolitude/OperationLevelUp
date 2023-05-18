@@ -18,6 +18,11 @@
         android:textColor="@color/yellow_whizz"
         android:textSize="30dp" />
 
+    <ProgressBar
+        android:id="@+id/signup_progress"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/full_name"
         android:layout_width="64dp"
@@ -35,15 +40,14 @@
         android:id="@+id/editTextFullName"
         android:layout_width="342dp"
         android:layout_height="48dp"
+        android:layout_below="@id/full_name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/login_entry_bar"
         android:ems="10"
         android:inputType="text"
-        android:minHeight="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_below="@id/full_name"
-        android:layout_marginTop="180dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/login_entry_bar"
-        />
+        android:minHeight="48dp" />
     <TextView
         android:id="@+id/username"
         android:layout_width="64dp"
@@ -55,18 +59,18 @@
         android:textAppearance="@style/full_name"
         android:gravity="center_horizontal|top"
         />
-    <EditText
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextUsername"
         android:layout_width="342dp"
         android:layout_height="48dp"
+        android:layout_below="@id/editTextFullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_entry_bar"
         android:ems="10"
         android:inputType="text"
-        android:minHeight="48dp"
-        android:layout_below="@id/editTextFullName"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/login_entry_bar"
-        />
+        android:minHeight="48dp" />
     <TextView
         android:id="@+id/email_text"
         android:layout_width="64dp"
@@ -78,18 +82,18 @@
         android:textAppearance="@style/full_name"
         android:gravity="center_horizontal|top"
         />
-    <EditText
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextEmail"
         android:layout_width="342dp"
         android:layout_height="48dp"
+        android:layout_below="@id/editTextUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_entry_bar"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:layout_below="@id/editTextUsername"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/login_entry_bar"
-        />
+        android:minHeight="48dp" />
     <TextView
         android:id="@+id/password"
         android:layout_width="64dp"
@@ -101,18 +105,18 @@
         android:textAppearance="@style/full_name"
         android:gravity="center_horizontal|top"
         />
-    <EditText
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextPassword"
         android:layout_width="342dp"
         android:layout_height="48dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_entry_bar"
         android:ems="10"
         android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:layout_below="@id/editTextEmail"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/login_entry_bar"
-        />
+        android:minHeight="48dp" />
     <TextView
         android:id="@+id/confirm_password"
         android:layout_width="wrap_content"
@@ -124,7 +128,7 @@
         android:textAppearance="@style/full_name"
         android:gravity="center_horizontal|top"
         />
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextConfirmPassword"
         android:layout_width="342dp"
         android:layout_height="48dp"
@@ -137,43 +141,42 @@
         android:background="@drawable/login_entry_bar"
         />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/yellow_whizz"
-        android:textColor="@color/yellow_whizz"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="-6dp"
-        android:layout_below="@id/editTextConfirmPassword"
-        />
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/editTextConfirmPassword"-->
+<!--        android:layout_marginLeft="105dp"-->
+<!--        android:layout_marginTop="-6dp"-->
+<!--        android:buttonTint="@color/yellow_whizz"-->
+<!--        android:textColor="@color/yellow_whizz" />-->
 
 
     <Button
+        android:id="@+id/button_Signin"
         android:layout_width="272dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button_Signin"
         android:layout_below="@id/editTextConfirmPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/yellow_whizz"
         android:text="sign Up"
         android:textColor="@color/purple_whizz"
-        android:backgroundTint="@color/yellow_whizz"
 
         />
-    <TextView
-        android:id="@+id/i_agree_wit"
-        android:layout_width="208dp"
-        android:layout_height="13dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="124dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/editTextConfirmPassword"
-        android:text="@string/i_agree_wit"
-        android:textAppearance="@style/i_agree_wit"
-        android:gravity="center_horizontal|top"
-        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/i_agree_wit"-->
+<!--        android:layout_width="208dp"-->
+<!--        android:layout_height="13dp"-->
+<!--        android:layout_below="@id/editTextConfirmPassword"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="124dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        android:text="@string/i_agree_wit"-->
+<!--        android:textAppearance="@style/i_agree_wit" />-->
 
 
 
