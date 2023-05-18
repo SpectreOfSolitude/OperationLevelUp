@@ -26,6 +26,7 @@
     <string name="full_name">Full Name</string>
     <string name="link_signup">Sign Up</string>
     <string name="have_no_account">You do not have account yet?</string>
+    <string name="have_account">I already have an account</string>
 
 
 </resources>
