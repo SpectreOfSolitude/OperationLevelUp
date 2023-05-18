@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,12 +24,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.whizz.R;
+import com.example.whizz.ui.signin.SigninActivity;
 import com.example.whizz.ui.ui.login.LoginViewModel;
 import com.example.whizz.ui.ui.login.LoginViewModelFactory;
 import com.example.whizz.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
+    TextView textView;
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
 
@@ -37,8 +40,17 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_login);
 
+        textView=(TextView)findViewById(R.id.signUp);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, SigninActivity.class);
+                startActivity(intent);
+                Toast.makeText(LoginActivity.this, "Sign Up in here", Toast.LENGTH_LONG).show();
+            }
+        });
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
@@ -46,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
+
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
@@ -122,6 +135,8 @@ public class LoginActivity extends AppCompatActivity {
                         passwordEditText.getText().toString());
             }
         });
+
+
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
@@ -133,4 +148,7 @@ public class LoginActivity extends AppCompatActivity {
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
+
+
+
 }
