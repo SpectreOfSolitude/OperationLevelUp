@@ -1,4 +1,4 @@
-package com.example.whizz.ui.quest;
+package com.example.whizz.ui.Quest;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
